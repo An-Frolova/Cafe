@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_of_ice_creams"
+        app:srcCompat="@drawable/three_ice_creams" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/cafe_name"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="name"
+        android:hint="@string/user_name_hint"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/createIceCreamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/comfortaa_light"
+        android:padding="16dp"
+        android:text="@string/create_ice_cream_button"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
