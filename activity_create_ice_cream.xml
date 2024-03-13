@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".CreateIceCreamActivity">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="19dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonInCone"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/radio_button_cone"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOnPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/radio_button_plate"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewTastes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@color/blue_light"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="@string/textViewChooseTaste"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textViewScoopOne"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:text="@string/scoop_ice_cream_1"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTastesOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTastes" />
+
+        <Spinner
+            android:id="@+id/spinnerTastesOne"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="24dp"
+            android:entries="@array/tastes_of_ice_cream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewScoopOne"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTastes" />
+
+        <TextView
+            android:id="@+id/textViewScoopTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:text="@string/scoop_ice_cream_2"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTastesTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScoopOne" />
+
+        <Spinner
+            android:id="@+id/spinnerTastesTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:entries="@array/tastes_of_ice_cream_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewScoopTwo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScoopOne" />
+
+        <TextView
+            android:id="@+id/textViewScoopThree"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:text="@string/scoop_ice_cream_3"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerTastesThree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScoopTwo"
+            tools:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/spinnerTastesThree"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:entries="@array/tastes_of_ice_cream_2"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewScoopThree"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScoopTwo"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewAdditives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/blue_light"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="@string/textViewChooseAdditives"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/textViewScoopThree" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAdditives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/linearLayoutAdditives2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAdditives">
+
+            <CheckBox
+                android:id="@+id/checkBoxMarshmello"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_marshmello"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxConfiture"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_confiture"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxWhippedCream"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_whipped_сream"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAdditives2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/linearLayoutAdditives"
+            app:layout_constraintTop_toBottomOf="@id/textViewAdditives">
+
+            <CheckBox
+                android:id="@+id/checkBoxBanana"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_banana"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxStrawberry"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_strawberry"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxKiwi"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="@string/check_box_kiwi"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonMakeOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/gradient_button"
+            android:fontFamily="@font/comfortaa_light"
+            android:padding="16dp"
+            android:text="@string/make_order_button"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayoutAdditives" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

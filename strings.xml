@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Three Ice Creams</string>
+    <string name="cafe_name">Cafe Three Ice Creams</string>
+    <string name="user_name_hint">Имя покупателя</string>
+    <string name="create_ice_cream_button">Создать свое мороженое</string>
+    <string name="toast_please_enter_name">Пожалуйста, введите имя</string>
+    <string name="make_order_button">Сделать заказ</string>
+    <string name="radio_button_cone">в рожке</string>
+    <string name="radio_button_plate">на тарелке</string>
+    <string name="scoop_ice_cream_1">1 шарик</string>
+    <string name="textViewChooseTaste">Выбери вкус</string>
+    <string name="scoop_ice_cream_2">2 шарик</string>
+    <string name="scoop_ice_cream_3">3 шарик</string>
+    <string name="textViewChooseAdditives">Выбери добавки</string>
+    <string name="check_box_marshmello">маршмеллоу</string>
+    <string name="check_box_confiture">конфитюр</string>
+    <string name="check_box_kiwi">киви</string>
+    <string name="check_box_banana">банан</string>
+    <string name="check_box_whipped_сream">взбитые сливки</string>
+    <string name="check_box_strawberry">клубника</string>
+    <string name="text_view_additives">Добавки:</string>
+    <string name="text_view_taste_order">Вкус:</string>
+    <string name="text_view_order_number">Заказ №%d</string>
+    <string name="image_of_ice_creams">Image of ice creams</string>
+    <string name="tools_tastes">[мята вишня]</string>
+    <string name="tools_additives">[взбитые сливки конфитюр банан киви клубника маршмеллоу]</string>
+    <string name="text_view_icecream_order">Мороженое %s</string>
+    <string name="toast_choose_additives">Не более 2 добавок в рожке</string>
+    <string name="button_confirm_receipt">Я получил заказ</string>
+    <string name="toast_order_confirmation">Получение заказа подтверждено</string>
+
+    <string-array name="tastes_of_ice_cream">
+        <item>клубника</item>
+        <item>шоколад</item>
+        <item>ваниль</item>
+        <item>мята</item>
+        <item>вишня</item>
+        <item>грецкий орех</item>
+        <item>баблгам</item>
+    </string-array>
+
+    <string-array name="tastes_of_ice_cream_2">
+        <item>—</item>
+        <item>клубника</item>
+        <item>шоколад</item>
+        <item>ваниль</item>
+        <item>мята</item>
+        <item>вишня</item>
+        <item>грецкий орех</item>
+        <item>баблгам</item>
+    </string-array>
+
+</resources>
